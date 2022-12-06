@@ -257,12 +257,15 @@ Secondary Color (white): #white;
    
    /*media response*/
    
-   @media all and (max-width: 400px){
+   @media all and (max-width: 380px){
     th{
         font-size: 18px;
     }
     table{
         font-size: 15px;
+    }
+    .button{
+        font-size: 18px;
     }
    }
    @media all and (max-width: 750px){
