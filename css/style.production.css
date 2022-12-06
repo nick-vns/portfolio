@@ -273,13 +273,13 @@ Secondary Color (white): #white;
    }
    @media all and (max-width: 380px){
     th{
-        font-size: 18px;
+        font-size: 19px;
     }
     table{
-        font-size: 15px;
+        font-size: 17px;
     }
     .button{
-        font-size: 18px;
+        font-size: 17px;
     }
    }
    @media all and (max-width: 750px){
