@@ -97,9 +97,7 @@ Secondary Color (white): #white;
        padding: 20px;
    }
    
-    
-   
-   *{
+    *{
        -webkit-box-sizing: border-box;
                box-sizing: border-box;
    }
