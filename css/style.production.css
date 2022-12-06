@@ -256,7 +256,21 @@ Secondary Color (white): #white;
    }
    
    /*media response*/
-   
+   @media all and (max-width: 320px){
+    .page_header__item{
+        padding: 15px;
+        margin-top: -20px;
+    }
+   }
+   @media all and (max-width: 650px){
+    .profile{
+        display: inline;
+        text-align: center;
+    }
+    .profile_photo{
+        margin: 30px;
+    }
+   }
    @media all and (max-width: 380px){
     th{
         font-size: 18px;
