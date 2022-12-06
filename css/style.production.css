@@ -257,6 +257,14 @@ Secondary Color (white): #white;
    
    /*media response*/
    
+   @media all and (max-width: 400px){
+    th{
+        font-size: 18px;
+    }
+    table{
+        font-size: 15px;
+    }
+   }
    @media all and (max-width: 750px){
        @media all and (max-width: 500px){
            .grid{
