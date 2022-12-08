@@ -12,6 +12,7 @@ Text Color (Blue): #53C1C7;
 Primary Color (black): #black;
 Secondary Color (white): #white;
  */
+
  :root {
     --primary-color: #53C1C7;
        --secondary-color: lightblue;
@@ -89,7 +90,8 @@ Secondary Color (white): #white;
        cursor: pointer;
        opacity: 0.8;
        text-decoration: none;
-       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+       -webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+               box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
        
    }
    
