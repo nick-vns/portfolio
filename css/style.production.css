@@ -83,7 +83,7 @@
    }
    .error-message {
     color: rgb(197, 21, 21);
-    font-size: 18px;
+    font-size: 15px;
    }
    .contacts{
        background-color: var(--secondary-color);
@@ -218,8 +218,8 @@
        padding: 10px;
    }
    label{
-    font-size: 20px;
-    margin: 5px 5px;
+    font-size: 18px;
+    margin: 3px 3px;
    }
    p{
        font-size: 23px;
