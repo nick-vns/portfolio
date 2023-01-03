@@ -75,7 +75,7 @@
         let isMessageValid = validateMessage();
         return isEmailValid && isMessageValid && isNumberValid;
     }
-    form.addEventListener('sumbit', (e) => {
+    form.addEventListener('submit', (e) => {
         e.preventDefault();
         if (validateForm()) {
             alert('Your form has been sent.');
