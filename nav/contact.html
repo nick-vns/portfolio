@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Nick Vostrikov</title>
      <!--Css,small logo above the search bar, normolizer of css-->
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Patrick+Hand&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.production.css">
     <link rel="icon" href="/img/planet_icon-icons.com_50069.png">
@@ -46,20 +46,23 @@
         Tel: <a href="tel:+19293552474">+1(929)355-2474</a> <br>
         Email: <a href="mailto:nickvostrikov906@gmail.com">nickvostrikov906@gmail.com</a> <br>
         Skype: <a href="skype:vns_906">vns_906</a> <br>
-
     </div>
     <!--application form for user's message-->
     <footer>
-        <form action="" id="contact-form" method="post">
+        <form id="contact-form">
+            <div class="input-wrapper">
         <label for="contact email">E-mail: </label>
-        <input type="email" placeholder="your email" id="contact email" required>
-      
+        <input type="email" placeholder="Email" id="email">
+            </div>
+            <div class="input-wrapper">
         <label for="my number">Telephone: </label>
-        <input type="tel" id="my number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="your phone number" required>
-      
+        <input type="tel" id="number" placeholder="Phone number">
+            </div>
+            <div class="input-wrapper">
         <label for="users message">Message: </label>
-        <textarea placeholder="your message" id="users message" maxlenght="240" required></textarea>
-        <button type="button" class="button" >Send a message</button>
+        <textarea placeholder="Message" id="message"></textarea>
+            </div>
+        <button type="button" class="button">Send a message</button>
       </form>
     </footer>
 
@@ -76,6 +79,7 @@
 
     <!--accessibility guidelines-->
     <script src="/js/tota11y.min.js"></script>
+    <script src="/js/scripts.js"></script>
     
 </body>
 </html>
