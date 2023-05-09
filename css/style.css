@@ -93,10 +93,9 @@ h3 {
     color: var(--color-grey);
 }
 
-.text-italic {
+span {
     color: var(--color-green);
-    font-size: 17px;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 /*-------- links,buttons style ---------*/
@@ -135,6 +134,7 @@ a:visited {
     opacity: .8;
     transform: translateY(-5px);
     box-shadow: var(--box-shadow);
+    color: var(--color-white);
 }
 
 .button-primary:active {
@@ -645,12 +645,12 @@ small {
     }
 
     .profile__text {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
+        font-size: 2rem;
+        padding: 2rem;
     }
 
     .profile__link {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         letter-spacing: 1px;
     }
 
