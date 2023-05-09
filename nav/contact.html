@@ -4,101 +4,185 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Nick Vostrikov</title>
-    <!--Css,small logo above the search bar, normolizer of css-->
+    <title>Contact</title>
+    <meta
+      name="description"
+      content="This page contains contact details and an enquiry form"
+    />
+    <!-- Favicon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/mountain.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="/css/style.production.css" />
-    <link rel="icon" href="/img/planet_icon-icons.com_50069.png" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
   </head>
   <body>
-    <header class="page_header">
-      <!--Navigation-->
-      <nav class="main-navigation page_header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="/index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <h1>Contacts</h1>
-    <div class="contacts">
-      3930 W 14th ave <br />
-      Denver CO 80204 <br />
-      Tel: <a href="tel:+19293552474">+1(929)355-2474</a> <br />
-      Email:
-      <a href="mailto:nickvostrikov906@gmail.com">nickvostrikov906@gmail.com</a>
-      <br />
-      Skype: <a href="skype:vns_906">vns_906</a> <br />
-    </div>
-    <!--application form for user's message-->
-    <footer>
-      <form id="contact-form">
-        <div class="input-wrapper">
-          <label for="contact email">E-mail: </label>
-          <input type="email" placeholder="Email" id="email" />
-        </div>
-        <div class="input-wrapper">
-          <label for="my number">Telephone: </label>
-          <input type="tel" id="number" placeholder="Phone number" />
-        </div>
-        <div class="input-wrapper">
-          <label for="users message">Message: </label>
-          <textarea placeholder="Message" id="message"></textarea>
-        </div>
-        <button class="button">Send a message</button>
-      </form>
-    </footer>
-    <!--Logos-->
-    <footer class="logo_footer">
-      <div class="social_media">
-        <h2>Find me on</h2>
-        <a href="https://github.com/freak906/portfolio" target="_blank"
-          ><img src="/img/icons8-github.svg" alt="round logo of github"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/nick-vostrikov-72ab12252/"
-          target="_blank"
-          ><img
-            src="/img/icons8-linkedin-circled.svg"
-            alt="round logo of Linkedin"
-        /></a>
-        <a href="https://www.instagram.com/nick_vrk/" target="_blank"
-          ><img src="/img/icons8-instagram.svg" alt="round logo of Instagram"
-        /></a>
-      </div>
-    </footer>
+    <div class="flex-container">
+      <header class="page-header">
+        <img
+          src="../img/nv.png"
+          class="page-header__item navigation-logo"
+          alt="navigation logo nick's name"
+        />
 
-    <!--accessibility guidelines
-    <script src="/js/tota11y.min.js"></script>-->
-    <script src="/js/scripts.js"></script>
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <div class="dropdown__close-box isVisible">
+              <img
+                src="../img/icon-close-menu.svg"
+                alt="close icon"
+                class="dropdown__close"
+              />
+            </div>
+            <div class="navigation-list__items">
+              <li role="presentation">
+                <a
+                  href="../index.html"
+                  role="menuitem"
+                  class="navigation-list__item navigation-list__item"
+                  >Home</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="about.html"
+                  role="menuitem"
+                  class="navigation-list__item"
+                  >About</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="work.html"
+                  role="menuitem"
+                  class="navigation-list__item"
+                  >Work</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="contact.html"
+                  role="menuitem"
+                  class="navigation-list__item navigation-list__item--active"
+                  >Contact</a
+                >
+              </li>
+            </div>
+          </ul>
+          <div class="dropdown__menu-box">
+            <img
+              src="../img/icon-menu.svg"
+              alt="menu icon"
+              class="dropdown__menu"
+            />
+          </div>
+        </nav>
+      </header>
+      <main class="contact-main">
+        <h1 class="contact__heading">Contacts</h1>
+        <section class="info-section">
+          <div>
+            Address:
+            <p>3930 W 14th ave</p>
+            <p>Denver, CO, USA</p>
+          </div>
+          <p>
+            Tel: <a href="tel:+1(929)355-2474" class="link">+1(929)355-2474</a>
+          </p>
+          <p>
+            Email:
+            <a href="mailto:nickvostrikov906@gmail.com" class="link"
+              >nickvostrikov906@gmail.com</a
+            >
+          </p>
+        </section>
+
+        <form
+          id="contact-form"
+          class="contact__form"
+          action="#"
+          method="post"
+          novalidate
+        >
+          <div class="input--email-box">
+            <label for="email" class="form__label">E-mail: </label>
+            <input
+              type="email"
+              name="email"
+              class="form__input"
+              placeholder="Email*"
+              id="email"
+            />
+          </div>
+          <div class="input--number-box">
+            <label for="number" class="form__label">Telephone: </label>
+            <input
+              type="tel"
+              id="number"
+              class="form__input"
+              placeholder="Phone number*"
+            />
+          </div>
+          <div>
+            <label for="users message" class="form__label">Message: </label>
+            <textarea
+              placeholder="Message*"
+              id="message"
+              class="form__textarea"
+              cols="30"
+              rows="3"
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit" class="button-primary">Submit</button>
+          </div>
+        </form>
+      </main>
+      <footer class="page-footer page-footer--home">
+        <div class="footer__media-box">
+          <a href="https://www.instagram.com/nick_vrk/?hl=en" target="_blank"
+            ><img
+              src="../img/icons8-instagram-32.svg"
+              alt="instagram"
+              class="footer__media"
+          /></a>
+          <a href="https://github.com/nick-vns" target="_blank">
+            <img src="../img/github.svg" alt="Github" class="footer__media" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nick-vostrikov-72ab12252/"
+            target="_blank"
+            ><img
+              src="../img/linkedin.svg"
+              alt="LinkedIn"
+              class="footer__media"
+          /></a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>

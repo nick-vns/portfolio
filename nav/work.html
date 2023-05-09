@@ -5,129 +5,783 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work</title>
-    <!--Css,small logo above the search bar, normolizer of css-->
+    <meta name="description" />
+    <!-- Favicon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/mountain.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <!-- Bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="/css/style.production.css" />
-    <link rel="icon" href="/img/planet_icon-icons.com_50069.png" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
   </head>
   <body>
-    <header class="page_header">
-      <!--Navigation-->
-      <nav class="navbar">
-        <div class="container">
-          <a class="navbar-brand" href="/index.html">
-            <img src="/img/mount.png" alt="mountins" width="60" height="50" />
+    <div class="flex-container">
+      <header class="page-header">
+        <img
+          src="../img/nv.png"
+          class="page-header__item navigation-logo"
+          alt="navigation logo nick's name"
+        />
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <div class="dropdown__close-box isVisible">
+              <img
+                src="../img/icon-close-menu.svg"
+                alt="close icon"
+                class="dropdown__close"
+              />
+            </div>
+            <div class="navigation-list__items">
+              <li role="presentation">
+                <a
+                  href="../index.html"
+                  role="menuitem"
+                  class="navigation-list__item navigation-list__item"
+                  >Home</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="about.html"
+                  role="menuitem"
+                  class="navigation-list__item"
+                  >About</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="work.html"
+                  role="menuitem"
+                  class="navigation-list__item navigation-list__item--active"
+                  >Work</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="contact.html"
+                  role="menuitem"
+                  class="navigation-list__item"
+                  >Contact</a
+                >
+              </li>
+            </div>
+          </ul>
+          <div class="dropdown__menu-box">
+            <img
+              src="../img/icon-menu.svg"
+              alt="menu icon"
+              class="dropdown__menu"
+            />
+          </div>
+        </nav>
+      </header>
+      <main class="work-main">
+        <h1 class="work__heading">Work</h1>
+        <div class="projects-grid">
+          <!-- Meet App -->
+          <div class="grid__item">
+            <h3 class="project__title">Meet App</h3>
+            <div
+              class="project__image-box"
+              data-bs-toggle="modal"
+              data-bs-target="#meetModal"
+            >
+              <picture>
+                <img
+                  src="../img/meet-app.png"
+                  class="project__image"
+                  alt="Meet App image"
+                />
+              </picture>
+            </div>
+            <div class="project__description">
+              <ol>
+                Filter events by different cities.
+              </ol>
+              <ol>
+                Module that will allow show and hide details of event.
+              </ol>
+              <ol>
+                Filter amout of events that could be displayed.
+              </ol>
+              <ol>
+                Allow users to navigate in an app offline.
+              </ol>
+            </div>
+            <button
+              type="button"
+              class="project__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#meetModal"
+            >
+              See details
+            </button>
+          </div>
+          <!-- Modal for Meet App-->
+          <div
+            class="modal fade"
+            id="meetModal"
+            tabindex="-1"
+            aria-labelledby="modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal__title">Meet App</h3>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal__image-box">
+                  <picture>
+                    <img
+                      src="../img/signin.png"
+                      class="modal__image"
+                      alt="Meet App image"
+                    />
+                  </picture>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    The app that has been build using React with
+                    test-driven-development (TDD) technique that will allow
+                    users to see details of upcoming events in different cities
+                    including day, time, month using Google Calendar API.
+                  </p>
+                  <hr />
+                  <h4 class="modal__techs">Technologies:</h4>
+                  <p>
+                    React, Recharts, AWS Lamda, serverless, Jest, cucmber-jest,
+                    Puppeteer, Atatus etc.
+                  </p>
+                  <div class="modal__links">
+                    <div>
+                      <a
+                        href="https://nick-vns.github.io/meet/"
+                        class="project__btn modal__btn"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/nick-vns/meet"
+                        target="_blank"
+                      >
+                        <img
+                          src="../img/github.svg"
+                          alt="Github"
+                          class="footer__media"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CinemaFlix React-->
+          <div class="grid__item">
+            <h3 class="project__title">CinemaFlix React</h3>
+            <div
+              class="project__image-box"
+              data-bs-toggle="modal"
+              data-bs-target="#CinemaFlixModal"
+            >
+              <picture>
+                <img
+                  src="../img/react-movie.png"
+                  class="project__image"
+                  alt="CinemaFlix image"
+                />
+              </picture>
+            </div>
+            <div class="project__description">
+              <ol>
+                To see all movies including search option to find one.
+              </ol>
+              <ol>
+                Accessibility to movie's data to see details and find common
+                movies.
+              </ol>
+              <ol>
+                Accessibility to user's account data including interact with and
+                change it.
+              </ol>
+            </div>
+            <button
+              type="button"
+              class="project__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#CinemaFlixModal"
+            >
+              See details
+            </button>
+          </div>
+          <!-- Modal for CinemaFlix React-->
+          <div
+            class="modal fade"
+            id="CinemaFlixModal"
+            tabindex="-1"
+            aria-labelledby="modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal__title">CinemaFlix React</h3>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal__image-box">
+                  <picture>
+                    <img
+                      src="../img/account.png"
+                      class="modal__image"
+                      alt="CinemaFlix app image"
+                    />
+                  </picture>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    A client-side for an app CinemaFlix using React, CinemaFlix
+                    based on existing server-side code REST API and database
+                    which provides with routing between different pages as well
+                    as responsive actions as create update delete account.
+                  </p>
+                  <hr />
+                  <h4 class="modal__techs">Technologies:</h4>
+                  <p>Node.js, Express, MongoDB, React, React Bootstrap etc.</p>
+                  <div class="modal__links">
+                    <div>
+                      <a
+                        href="https://cinemaflix-movies.netlify.app/"
+                        class="project__btn modal__btn"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                    </div>
+                    <div>
+                      <div>
+                        <small>React clint-side:</small>
+                        <a
+                          href="https://github.com/nick-vns/CinemaFlix-client"
+                          target="_blank"
+                        >
+                          <img
+                            src="../img/github.svg"
+                            alt="Github"
+                            class="footer__media"
+                          />
+                        </a>
+                      </div>
+                      <div>
+                        <small>CinemaFlix API:</small>
+                        <a
+                          href="https://github.com/nick-vns/CinemaFlix_api"
+                          target="_blank"
+                        >
+                          <img
+                            src="../img/github.svg"
+                            alt="Github"
+                            class="footer__media"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pokemon List -->
+          <div class="grid__item">
+            <h3 class="project__title">Pokemon List App</h3>
+            <div
+              class="project__image-box"
+              data-bs-toggle="modal"
+              data-bs-target="#pokemonListModal"
+            >
+              <picture>
+                <img
+                  src="../img/pokemons.png"
+                  class="project__image"
+                  alt="Pokemon List App image"
+                />
+              </picture>
+            </div>
+            <div class="project__description">
+              <ol>
+                Get the data from an external source (API).
+              </ol>
+              <ol>
+                See the list of items.
+              </ol>
+              <ol>
+                Clicking onto button will get an item's info with img.
+              </ol>
+            </div>
+            <button
+              type="button"
+              class="project__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#pokemonListModal"
+            >
+              See details
+            </button>
+          </div>
+          <!-- Modal for PokemonList-->
+          <div
+            class="modal fade"
+            id="pokemonListModal"
+            tabindex="-1"
+            aria-labelledby="modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal__title">Pokemon List</h3>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal__image-box">
+                  <picture>
+                    <img
+                      src="../img/pokemon_.png"
+                      class="modal__image"
+                      alt="Pokemon List App image"
+                    />
+                  </picture>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    A web application with HTML, CSS, and JavaScript that gets
+                    data from an external API and show items and interaction
+                    with them through JS.
+                  </p>
+                  <hr />
+                  <h4 class="modal__techs">Technologies:</h4>
+                  <p>HTML, CSS, Bootstrap, JavaScript, jQuery</p>
+                  <div class="modal__links">
+                    <div>
+                      <a
+                        href="https://nick-vns.github.io/js-pokedex/"
+                        class="project__btn modal__btn"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/nick-vns/js-pokedex"
+                        target="_blank"
+                      >
+                        <img
+                          src="../img/github.svg"
+                          alt="Github"
+                          class="footer__media"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CinemaFlix angular -->
+          <div class="grid__item">
+            <h3 class="project__title">CinemaFlix Angular</h3>
+            <div
+              class="project__image-box"
+              data-bs-toggle="modal"
+              data-bs-target="#CinemaFlixAngularModal"
+            >
+              <picture>
+                <img
+                  src="../img/angular-movie.png"
+                  class="project__image"
+                  alt="cinemaflix app image"
+                />
+              </picture>
+            </div>
+            <div class="project__description">
+              <ol>
+                Rounting between pages.
+              </ol>
+              <ol>
+                Accessibility to user's account data including interact with and
+                change it.
+              </ol>
+              <ol>
+                Accessibility to movie's data to see details and find common
+                movies.
+              </ol>
+              <ol>
+                To see all movies including search option to find one.
+              </ol>
+            </div>
+            <button
+              type="button"
+              class="project__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#CinemaFlixAngularModal"
+            >
+              See details
+            </button>
+          </div>
+          <!-- Modal for CinemaFlix angular-->
+          <div
+            class="modal fade"
+            id="CinemaFlixAngularModal"
+            tabindex="-1"
+            aria-labelledby="modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal__title">CinemaFlix Angular</h3>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal__image-box">
+                  <picture>
+                    <img
+                      src="../img/profile.png"
+                      class="modal__image"
+                      alt="cinemaflix app image"
+                    />
+                  </picture>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Client-side for an app CinemaFlix using Angular, Typescript,
+                    based on existing server-side code REST API and database
+                    which provides with routing between different pages as well
+                    as responsive actions as create, update, delete account.
+                  </p>
+                  <hr />
+                  <h4 class="modal__techs">Technologies:</h4>
+                  <p>Angular, TypeScript, TypeDoc, SCSS etc.</p>
+                  <div class="modal__links">
+                    <div>
+                      <a
+                        href="https://nick-vns.github.io/CinemaFlix-client-Angular/"
+                        class="project__btn modal__btn"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                    </div>
+                    <div>
+                      <small>Angular client-side:</small>
+                      <a
+                        href="https://github.com/nick-vns/CinemaFlix-client-Angular"
+                        target="_blank"
+                      >
+                        <img
+                          src="../img/github.svg"
+                          alt="Github"
+                          class="footer__media"
+                        />
+                      </a>
+                      <div>
+                        <small>CinemaFlix API:</small>
+                        <a
+                          href="https://github.com/nick-vns/CinemaFlix_api"
+                          target="_blank"
+                        >
+                          <img
+                            src="../img/github.svg"
+                            alt="Github"
+                            class="footer__media"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Chat App -->
+          <div class="grid__item">
+            <h3 class="project__title">Chat App</h3>
+            <div
+              class="project__image-box"
+              data-bs-toggle="modal"
+              data-bs-target="#ChatAppModal"
+            >
+              <picture>
+                <img
+                  src="../img/home.png"
+                  class="project__image"
+                  alt="Chat app image"
+                />
+              </picture>
+            </div>
+            <div class="project__description">
+              <ol>
+                Stores data online and offline.
+              </ol>
+              <ol>
+                Allow users to send messages, pictures, share location.
+              </ol>
+              <ol>
+                Displays a chat with input field for messages and sumbit button.
+              </ol>
+              <ol>
+                Allow users to log in with their name, as well as choose
+                background color for app.
+              </ol>
+            </div>
+            <button
+              type="button"
+              class="project__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#ChatAppModal"
+            >
+              See details
+            </button>
+          </div>
+          <!-- Modal for Chat app-->
+          <div
+            class="modal fade"
+            id="ChatAppModal"
+            tabindex="-1"
+            aria-labelledby="modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal__title">Chat App</h3>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal__image-box">
+                  <picture>
+                    <img
+                      src="../img/chat.png"
+                      class="modal__image"
+                      alt="Chat app image"
+                    />
+                  </picture>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    The mobile app that has been build with React Native using
+                    Expo, that will allow users to interact with chat interface
+                    as well as able to send images and share location.
+                  </p>
+                  <hr />
+                  <h4 class="modal__techs">Technologies:</h4>
+                  <p>
+                    JavaScript, React Native, Expo, Google Firestore DB etc.
+                  </p>
+                  <div class="modal__links">
+                    <div>
+                      <small>Github code:</small>
+                      <a
+                        href="https://github.com/nick-vns/chat_app"
+                        target="_blank"
+                      >
+                        <img
+                          src="../img/github.svg"
+                          alt="Github"
+                          class="footer__media"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CinemaFlix Api -->
+          <div class="grid__item">
+            <h3 class="project__title">CinemaFlix API</h3>
+            <div
+              class="project__image-box"
+              data-bs-toggle="modal"
+              data-bs-target="#CinemaFlixApiModal"
+            >
+              <picture>
+                <img
+                  src="../img/api.png"
+                  class="project__image"
+                  alt="Code image"
+                />
+              </picture>
+            </div>
+            <div class="project__description">
+              <ol>
+                User's password hashing.
+              </ol>
+              <br />
+              <ol>
+                MongoDB that contains data about movies and users.
+              </ol>
+              <br />
+              <ol>
+                Endpoionts that allow you to navigate between pages.
+              </ol>
+              <br />
+              <ol>
+                JWT token based authentication.
+              </ol>
+            </div>
+            <button
+              type="button"
+              class="project__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#CinemaFlixApiModal"
+            >
+              See details
+            </button>
+          </div>
+          <!-- Modal for API-->
+          <div
+            class="modal fade"
+            id="CinemaFlixApiModal"
+            tabindex="-1"
+            aria-labelledby="modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal__title">CinemaFlix API</h3>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal__image-box">
+                  <picture>
+                    <img
+                      src="../img/api.png"
+                      class="modal__image"
+                      alt="Code image"
+                    />
+                  </picture>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    An API that has been built by using Node.js Express and
+                    JavaScript, with mongoDB to create accounts and store it in
+                    datatbase as well as data for movies, genres, directors.
+                    Allow to add new user as well as update and delete.
+                  </p>
+                  <hr />
+                  <h4 class="modal__techs">Technologies:</h4>
+                  <p>JavaScript, Node.js, Express, JSON, MongoDB etc.</p>
+                  <div class="modal__links">
+                    <div>
+                      <small>Code for an API:</small>
+                      <a
+                        href="https://github.com/nick-vns/CinemaFlix_api"
+                        target="_blank"
+                      >
+                        <img
+                          src="../img/github.svg"
+                          alt="Github"
+                          class="footer__media"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <small>Documentation:</small>
+                      <a
+                        href="https://myflix-app.herokuapp.com/documentation.html"
+                        target="_blank"
+                      >
+                        <img
+                          src="../img/github.svg"
+                          alt="Github"
+                          class="footer__media"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="page-footer page-footer--home">
+        <div class="footer__media-box">
+          <a href="https://www.instagram.com/nick_vrk/?hl=en" target="_blank"
+            ><img
+              src="../img/icons8-instagram-32.svg"
+              alt="instagram"
+              class="footer__media"
+          /></a>
+          <a href="https://github.com/nick-vns" target="_blank">
+            <img src="../img/github.svg" alt="Github" class="footer__media" />
           </a>
+          <a
+            href="https://www.linkedin.com/in/nick-vostrikov-72ab12252/"
+            target="_blank"
+            ><img
+              src="../img/linkedin.svg"
+              alt="LinkedIn"
+              class="footer__media"
+          /></a>
         </div>
-      </nav>
+      </footer>
+    </div>
 
-      <nav class="main-navigation page_header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="/index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Main content -->
-    <section>
-      <h1>Work</h1>
-      <div class="grid">
-        <div class="grid__item">
-          <h2>Mobile web app</h2>
-          <p>
-            Within this project, I was responsible for the frontend. It’s
-            written in React.js. Additionally, I've created the HTML and CSS
-            templates.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-        <div class="grid__item">
-          <h2>Mobile web app</h2>
-          <p>
-            Within this project, I was responsible for the frontend. It’s
-            written in React.js. Additionally, I've created the HTML and CSS
-            templates.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-        <div class="grid__item">
-          <h2>Mobile web app</h2>
-          <p>
-            Within this project, I was responsible for the frontend. It’s
-            written in React.js. Additionally, I've created the HTML and CSS
-            templates.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-        <div class="grid__item">
-          <h2>Mobile web app</h2>
-          <p>
-            Within this project, I was responsible for the frontend. It’s
-            written in React.js. Additionally, I've created the HTML and CSS
-            templates.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-      </div>
-    </section>
-    <!--Logos-->
-    <footer class="logo_footer">
-      <div class="social_media">
-        <h2>Find me on</h2>
-        <a href="https://github.com/freak906/portfolio" target="_blank"
-          ><img src="/img/icons8-github.svg" alt="round logo of github"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/nick-vostrikov-72ab12252/"
-          target="_blank"
-          ><img
-            src="/img/icons8-linkedin-circled.svg"
-            alt="round logo of Linkedin"
-        /></a>
-        <a href="https://www.instagram.com/nick_vrk/" target="_blank"
-          ><img src="/img/icons8-instagram.svg" alt="round logo of Instagram"
-        /></a>
-      </div>
-    </footer>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>

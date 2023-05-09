@@ -4,135 +4,178 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Nick Vostrikov</title>
-    <!--Css,small logo above the search bar, normolizer of css-->
+    <title>About</title>
+    <meta name="description" />
+    <!-- Favicon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/mountain.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="/css/style.production.css" />
-    <link rel="icon" href="/img/planet_icon-icons.com_50069.png" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
   </head>
   <body>
-    <header class="page_header">
-      <!--Navigation-->
-      <nav class="main-navigation page_header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="/index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <h1>About</h1>
-    <p>My past and current work expirience.</p>
-    <br />
-    <table class="align_center">
-      <thead>
-        <tr>
-          <th>Possitions</th>
-          <th>Years of practice</th>
-          <th>Skills in field</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Bartender</td>
-          <td>7</td>
-          <td>Mixologist</td>
-        </tr>
-        <tr>
-          <td>Barista</td>
-          <td>3</td>
-          <td>Knowledgeable</td>
-        </tr>
-        <tr>
-          <td>Server</td>
-          <td>1</td>
-          <td>Need more practice</td>
-        </tr>
-        <tr>
-          <td>Developer</td>
-          <td>0.2</td>
-          <td>Learning</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="about_p">My skills in music industry.</p>
-    <br />
-    <table class="align_center">
-      <thead>
-        <tr>
-          <th>Instruments</th>
-          <th>Music I play</th>
-          <th>For how long</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Guitar</td>
-          <td>Rock,Acoustic,Pop</td>
-          <td>Playing for 12 years</td>
-        </tr>
-        <tr>
-          <td>Keyboards</td>
-          <td>Acoustic,Jazz</td>
-          <td>Learned how to play in pandemic</td>
-        </tr>
-        <tr>
-          <td>Flute</td>
-          <td>None yet</td>
-          <td>Just started to learn</td>
-        </tr>
-      </tbody>
-    </table>
-    <!--button to download cv-->
-    <a href="/img/cv.png" class="button" download>Download my CV</a>
-    <!--Logos-->
-    <footer class="logo_footer">
-      <div class="social_media">
-        <h2>Find me on</h2>
-        <a href="https://github.com/freak906/portfolio" target="_blank"
-          ><img src="/img/icons8-github.svg" alt="round logo of github"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/nick-vostrikov-72ab12252/"
-          target="_blank"
-          ><img
-            src="/img/icons8-linkedin-circled.svg"
-            alt="round logo of Linkedin"
-        /></a>
-        <a href="https://www.instagram.com/nick_vrk/" target="_blank"
-          ><img src="/img/icons8-instagram.svg" alt="round logo of Instagram"
-        /></a>
-      </div>
-    </footer>
-    <!--accessibility guidelines--
-        <script src="/js/tota11y.min.js"></script>-->
+    <div class="flex-container">
+      <header class="page-header">
+        <img
+          src="../img/nv.png"
+          class="page-header__item navigation-logo"
+          alt="navigation logo nick's name"
+        />
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <div class="dropdown__close-box visible">
+              <!-- <img
+                src="../img/icon-close-menu.svg"
+                alt="close icon"
+                class="dropdown__close"
+              /> -->
+            </div>
+            <div class="navigation-list__items">
+              <li role="presentation">
+                <a
+                  href="../index.html"
+                  role="menuitem"
+                  class="navigation-list__item navigation-list__item"
+                  >Home</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="about.html"
+                  role="menuitem"
+                  class="navigation-list__item navigation-list__item--active"
+                  >About</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="work.html"
+                  role="menuitem"
+                  class="navigation-list__item"
+                  >Work</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="contact.html"
+                  role="menuitem"
+                  class="navigation-list__item"
+                  >Contact</a
+                >
+              </li>
+            </div>
+          </ul>
+          <div class="dropdown__menu-box">
+            <img
+              src="../img/icon-menu.svg"
+              alt="menu icon"
+              class="dropdown__menu"
+            />
+          </div>
+        </nav>
+      </header>
+      <main class="about-main">
+        <h1 class="about__heading">About</h1>
+        <p class="about__text">
+          I'am an organazied and self-motivated person who's originally from
+          Russia. I moved to US in 2019 and since then I've been living here.
+          I've been working in food industry for 7 years being behind the bar
+          and finally realized it's time to move on. I started to learn web
+          developing and moved forward a lot. I acquired skills using React,
+          JavaScript, Node.js, experienced creating and working with APIs as
+          well as managing and maintaining database.
+        </p>
+        <h2>Skills</h2>
+        <table class="skill-table">
+          <thead class="table-head">
+            <tr class="table-row">
+              <th class="table__item">Frontend</th>
+              <th class="table__item">Backend</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr class="table-row">
+              <td class="table__item">HTML</td>
+              <td class="table__item">Node.js</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table__item">CSS</td>
+              <td class="table__item">Express</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table__item">Sass</td>
+              <td class="table__item">MongoDB</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table__item">Angular</td>
+              <td class="table__item">Mongoose</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table__item">JavaScript</td>
+              <td class="table__item">EJS</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table__item">jQuery</td>
+              <td class="table__item">Github/Version Control</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table__item">React</td>
+              <td class="table__item">Serverless</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table__item">React Native</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="../img/resume.pdf" target="_blank" class="button-primary"
+          >Download my CV</a
+        >
+      </main>
+      <footer class="page-footer page-footer--home">
+        <div class="footer__media-box">
+          <a href="https://www.instagram.com/nick_vrk/?hl=en" target="_blank"
+            ><img
+              src="../img/icons8-instagram-32.svg"
+              alt="instagram"
+              class="footer__media"
+          /></a>
+          <a href="https://github.com/nick-vns" target="_blank">
+            <img src="../img/github.svg" alt="Github" class="footer__media" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nick-vostrikov-72ab12252/"
+            target="_blank"
+            ><img
+              src="../img/linkedin.svg"
+              alt="LinkedIn"
+              class="footer__media"
+          /></a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>
