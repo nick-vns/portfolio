@@ -416,11 +416,6 @@ td {
     transition: var(--transition);
 }
 
-.project__image:hover {
-    transform: scale(1.1) translateY(-1rem);
-    box-shadow: var(--box-shadow);
-}
-
 .project__description,
 .project__btn {
     font-size: 1.25rem;
