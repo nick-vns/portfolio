@@ -144,7 +144,6 @@ a:visited {
 .button-secondary:visited {
     color: var(--color-green);
     border-bottom: 2px solid currentColor;
-    border-radius: 5px;
     padding: .5rem;
     display: inline-block;
 }
@@ -277,9 +276,6 @@ a:visited {
     clear: both;
 }
 
-.footer__text {
-    margin-bottom: 2rem;
-}
 
 .footer__media {
     width: auto;
