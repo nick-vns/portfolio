@@ -77,19 +77,16 @@ thead {
 
 h1 {
     font-size: 3.6rem;
-    text-shadow: var(--text-shadow);
     color: var(--color-grey);
 }
 
 h2 {
     font-size: 2.7rem;
-    text-shadow: var(--text-shadow);
     color: var(--color-grey);
 }
 
 h3 {
     font-size: 2.2rem;
-    text-shadow: var(--text-shadow);
     color: var(--color-grey);
 }
 
@@ -113,6 +110,7 @@ a:visited {
 .link:hover,
 .link:focus {
     color: var(--color-blue);
+    border-bottom: 2px solid currentColor;
 }
 
 .button-primary {
@@ -147,7 +145,6 @@ a:visited {
 .button-secondary:visited {
     color: var(--color-green);
     border-bottom: 2px solid currentColor;
-    border-radius: 5px;
     padding: .5rem;
     display: inline-block;
 }
@@ -280,9 +277,6 @@ a:visited {
     clear: both;
 }
 
-.footer__text {
-    margin-bottom: 2rem;
-}
 
 .footer__media {
     width: auto;
@@ -312,6 +306,7 @@ a:visited {
     width: 25rem;
     height: 25rem;
     float: left;
+    margin-top: -20px;
     margin-right: 4rem;
     border-radius: 50%;
     overflow: hidden;
@@ -320,8 +315,6 @@ a:visited {
 
 .profile__portrait {
     width: 100%;
-    transition: var(--transition);
-    animation: 1.2s ease-in fadeIn;
 }
 
 .profile__text {
@@ -338,10 +331,9 @@ a:visited {
 .about__text {
     max-width: 60%;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 20px;
     border: 0.2px solid var(--color-green-light);
     background-color: var(--color-grey-light);
-    border-radius: 10px;
 }
 
 .skill-table {
@@ -349,7 +341,6 @@ a:visited {
     border: 0.5px solid var(--color-green-light);
     background-color: var(--color-grey-light);
     padding: 10px;
-    border-radius: 10px;
 }
 
 th,
