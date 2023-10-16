@@ -110,6 +110,7 @@ a:visited {
 .link:hover,
 .link:focus {
     color: var(--color-blue);
+    border-bottom: 2px solid currentColor;
 }
 
 .button-primary {
