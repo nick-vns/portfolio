@@ -1,189 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <meta
-      name="description"
-      content="This page contains contact details and an enquiry form"
-    />
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../img/mountain.png"
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-  </head>
-  <body>
-    <div class="flex-container">
-      <header class="page-header">
-        <a href="../index.html">
-          <img
-            src="../img/nv.png"
-            class="page-header__item navigation-logo"
-            alt="navigation logo nick's name"
-          />
-        </a>
-        <nav class="main-navigation page-header__item">
-          <ul role="menubar" class="navigation-list">
-            <div class="dropdown__close-box isVisible">
-              <img
-                src="../img/icon-close-menu.svg"
-                alt="close icon"
-                class="dropdown__close"
-              />
-            </div>
-            <div class="navigation-list__items">
-              <li role="presentation">
-                <a
-                  href="../index.html"
-                  role="menuitem"
-                  class="navigation-list__item navigation-list__item"
-                  >Home</a
-                >
-              </li>
-              <li role="presentation">
-                <a
-                  href="about.html"
-                  role="menuitem"
-                  class="navigation-list__item"
-                  >About</a
-                >
-              </li>
-              <li role="presentation">
-                <a
-                  href="work.html"
-                  role="menuitem"
-                  class="navigation-list__item"
-                  >Work</a
-                >
-              </li>
-              <li role="presentation">
-                <a
-                  href="contact.html"
-                  role="menuitem"
-                  class="navigation-list__item navigation-list__item--active"
-                  >Contact</a
-                >
-              </li>
-            </div>
-          </ul>
-          <div class="dropdown__menu-box">
-            <img
-              src="../img/icon-menu.svg"
-              alt="menu icon"
-              class="dropdown__menu"
-            />
-          </div>
-        </nav>
-      </header>
-      <main class="contact-main">
-        <h1 class="contact__heading">Contacts</h1>
-        <section class="info-section">
-          <div>
-            Address:
-            <p>3930 W 14th ave</p>
-            <p>Denver, CO, USA</p>
-          </div>
-          <p>
-            Tel: <a href="tel:+1(929)355-2474" class="link">+1(929)355-2474</a>
-          </p>
-          <p>
-            Email:
-            <a href="mailto:nickvostrikov906@gmail.com" class="link"
-              >nickvostrikov906@gmail.com</a
-            >
-          </p>
-        </section>
-
-        <form
-          id="contact-form"
-          class="contact__form"
-          action="#"
-          method="post"
-          novalidate
-        >
-          <div class="input--email-box">
-            <label for="email" class="form__label">E-mail: </label>
-            <input
-              type="email"
-              name="email"
-              class="form__input"
-              placeholder="Email*"
-              id="email"
-            />
-          </div>
-          <div class="input--number-box">
-            <label for="number" class="form__label">Telephone: </label>
-            <input
-              type="tel"
-              id="number"
-              class="form__input"
-              placeholder="Phone number*"
-            />
-          </div>
-          <div>
-            <label for="users message" class="form__label">Message: </label>
-            <textarea
-              placeholder="Message*"
-              id="message"
-              class="form__textarea"
-              cols="30"
-              rows="3"
-            ></textarea>
-          </div>
-          <div>
-            <button type="submit" class="button-primary">Submit</button>
-          </div>
-        </form>
-      </main>
-      <footer class="page-footer page-footer--home">
-        <div class="footer__media-box">
-          <a href="https://www.instagram.com/nick_vrk/?hl=en" target="_blank"
-            ><img
-              src="../img/icons8-instagram-32.svg"
-              alt="instagram"
-              class="footer__media"
-          /></a>
-          <a href="https://github.com/nick-vns" target="_blank">
-            <img src="../img/github.svg" alt="Github" class="footer__media" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nick-vostrikov-72ab12252/"
-            target="_blank"
-            ><img
-              src="../img/linkedin.svg"
-              alt="LinkedIn"
-              class="footer__media"
-          /></a>
-        </div>
-      </footer>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Nick Vostrikov about software development roles, freelance projects, or technical collaboration.">
+  <title>Contact | Nick Vostrikov</title>
+  <link rel="icon" type="image/png" href="../img/mountain.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">NV</span>
+        Nick Vostrikov
+      </a>
+      <nav aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" hidden>
+          Menu <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <ul class="site-menu list-unstyled" id="site-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../nav/work.html">Work</a></li>
+          <li><a href="../nav/about.html">About</a></li>
+          <li><a href="../nav/contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/scripts.js"></script>
-  </body>
+  <main id="main" tabindex="-1">
+    <div class="shell page-content">
+      <header class="page-intro">
+        <h1>Let’s connect.</h1>
+        <p class="intro">I’d love to hear about software development roles, freelance projects, or something you’d like to build together.</p>
+      </header>
+      <div class="contact-grid">
+        <section class="panel contact-primary">
+          <h2>Send me an email</h2>
+          <p>If you have a project in mind, tell me a little about it and what kind of help you’re looking for.</p>
+          <a class="action action-primary" href="mailto:frento981@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          <p class="email-address">frento981@gmail.com</p>
+        </section>
+        <section class="panel">
+          <h2>Find me online</h2>
+          <ul class="contact-links list-unstyled">
+            <li><a class="text-link" href="https://github.com/nick-vns" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+            <li><a class="text-link" href="https://www.linkedin.com/in/nikita-vostrikov-72ab12252/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div><strong>Nick Vostrikov</strong><span>Developer · Denver, Colorado</span></div>
+      <nav aria-label="Social links">
+        <ul class="social-links list-unstyled">
+          <li><a href="https://github.com/nick-vns" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/nikita-vostrikov-72ab12252/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/nick_vrk/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
 </html>
